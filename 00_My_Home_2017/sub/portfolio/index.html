@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Dream Whale</title>
+    <link rel="stylesheet" type="text/css" href="../../css/basic.css">
+    <link rel="stylesheet" type="text/css" href="../../css/portfolio.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(function(){
+            
+            function linear() {
+                $('.move_cloud01').animate({left:"-4200px"},8000,'linear',function(){});
+                $('.move_cloud02').animate({right:"-4500px"},7000,'linear');
+                $('.move_cloud03').animate({left:"-4500px"},5000,'linear');
+            }linear();
+            
+            $('.actionTxtType7').addClass('on');
+            
+            $(window).scroll(function(){
+                var winTop = $(window).scrollTop();
+                var boxOffset02 = $('.actionTxtType1').offset().top-780;
+                
+                if(winTop>boxOffset02){
+                        $('.actionTxtType1').addClass('on');
+                }else{
+                        $('.actionTxtType1').removeClass('on')
+                }
+            })
+            
+            $('.top').click(function(){
+                $('html,body').animate({
+                    scrollTop:0
+                },800,'swing')
+            })
+            
+            $('.contact').click(function(){
+                $('html,body').animate({
+                    scrollTop:5000
+                },800,'swing')
+            })
+            $('.nav_slide').click(function(){
+                $('.nav').toggleClass('on');
+            })
+            
+            $('.category-nav ul li a').click(function(){
+                $('.category-nav ul li a').removeClass('on');
+                $(this).toggleClass('on');
+            })
+            
+            $('.category-nav ul li a.all').click(function(){
+                $('.P_list>ul>li').show(200);
+            })
+            $('.category-nav ul li a.WebDesign').click(function(){
+                $('.P_list>ul>li').hide(200);
+                $('.P_list>ul>li.WebDesign').show(200);
+            })
+            $('.category-nav ul li a.Character').click(function(){
+                $('.P_list>ul>li').hide(200);
+                $('.P_list>ul>li.Character').show(200);
+            })
+            $('.category-nav ul li a.3DPrinting').click(function(){
+                $('.P_list>ul>li').hide(200);
+                $('.P_list>ul>li.3DPrinting').show(200);
+            })
+            $('.category-nav ul li a.Etc').click(function(){
+                $('.P_list>ul>li').hide(200);
+                $('.P_list>ul>li.Etc').show(200);
+            })
+            
+            
+            $('.P_list ul li').click(function(){
+                $(this).toggleClass('on');
+                $('.pop_wrap').toggleClass('on');
+            })
+          })
+    </script>
+    
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="Logo"><a href="http://dreamwhale.dothome.co.kr/00_My_Home/"></a></div>
+            <div class="Menu_wrap">
+                <a href="http://dreamwhale.dothome.co.kr/00_My_Home/sub/aboutMe/" class="aboutMe actionBtn9">
+                    <span class="txt">about Me</span>
+                        <span class="bubble_inner">
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                    </span>
+                </a>
+                <a href="http://dreamwhale.dothome.co.kr/00_My_Home/sub/portfolio/" class="portfolio actionBtn9">
+                    <span class="txt">Portfolio</span>
+                        <span class="bubble_inner">
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                    </span>
+                </a>
+                <a href="#none" class="contact actionBtn9">
+                    <span class="txt">Contact</span>
+                        <span class="bubble_inner">
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                    </span>
+                </a>
+            </div>
+            <div class="nav_slide"></div>
+            <div class="top"></div>
+        </div>
+    </header>
+    
+    <section>
+        <div class="background">
+            <p>Dream Whale</p>
+            <img src="../../images/cloud01.png" alt="구름01" class="move_cloud01">
+            <img src="../../images/cloud02.png" alt="구름02" class="move_cloud02">
+            <img src="../../images/cloud03.png" alt="구름03" class="move_cloud03">
+        </div>
+        <div class="article_wrap">
+        <div class="article">
+            <div class="txt_view01 actionTxtType7">
+                <div class="txt01">
+                    Portfolio
+                    <span class="shadow_txt txt_type1">Portfolio</span>
+                    <span class="shadow_txt txt_type2">Portfolio</span>
+                    <span class="shadow_txt txt_type3">Portfolio</span>
+                    <span class="shadow_txt txt_type4">Portfolio</span>
+                    <span class="shadow_txt txt_type5">Portfolio</span>
+                </div>
+            </div>
+            
+            <div class="category-nav">
+                <ul>
+                    <li><a href="#none" class="all on">All</a></li>
+                    <li><a href="#none" class="WebDesign">WebDesign</a></li>
+                    <li><a href="#none" class="Character">Character</a></li>
+                    <li><a href="#none" class="3DPrinting">3DPrinting</a></li>
+                    <li><a href="#none" class="Etc">Etc.</a></li>
+                </ul>
+            </div>
+            <div class="P_list">
+                <ul>
+                    <li class="WebDesign">
+                        <div class="img">
+                            <img src="../../images/sejong01.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Dw">Dw</li>
+                                    <li class="Ps">Ps</li>
+                                    <li class="Ai">Ai</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#WebDesign</div>
+                            <div class="contents">
+                                <p>사이트명: 세종어학원</p><br>
+                                <p>디자인 포커스: 심플, 블루(로고 색상과 통일)</p><br>
+                                <p>제작 동기: 지인 요청으로 포트폴리오 겸 학원 홈페이지 제작</p><br>
+                                <p>어려웠던 부분: 필리핀에 있는 학원이다 보니 의사소통 미스 및 시간 차이로 인한 작업속도 쳐짐.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="WebDesign">
+                        <div class="img">
+                            <img src="../../images/gyeonbokgung01.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Dw">Dw</li>
+                                    <li class="Ps">Ps</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#WebDesign</div>
+                            <div class="contents">
+                                <p>사이트명: 경복궁</p><br>
+                                <p>디자인 포커스: 간단하고 알아보기 쉽게, 브라운(고전적인 느낌)</p><br>
+                                <p>제작 동기: 포트폴리오 제작용 경복궁 홈페이지 리뉴얼 연습</p><br>
+                                <p>어려웠던 부분: 처음 제작한 홈페이지. 첫 웹디자인이라 이것저것 하고싶은 욕심을 버리기가 어려웠고 실패함.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="WebDesign">
+                        <div class="img">
+                            <img src="../../images/herbal01.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Dw">Dw</li>
+                                    <li class="Ps">Ps</li>
+                                    <li class="Pr">Pr</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#WebDesign</div>
+                            <div class="contents">
+                                <p>사이트명: 허벌페이스푸드</p><br>
+                                <p>디자인 포커스: 깨끗함, 화이트</p><br>
+                                <p>이용 사이트: 메이크샵</p><br>
+                                <p>제작 동기: 직장 홈페이지 리뉴얼.</p><br>
+                                <p>어려웠던 부분: 인스타그램 연동 위젯 적용.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="Character">
+                        <div class="img">
+                            <img src="../../images/20121201_dahee.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Ps">Ps</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#Character</div>
+                            <div class="contents">
+                                <p>용도: 캐릭커쳐</p><br>
+                                <p>제작 동기: 지인 요청</p><br>
+                                <p>어려웠던 부분: 컴퓨터를 이용해 그리기 시작한지 얼마 되지 않아 툴 사용에 어려움.</p><br>
+                                <p>첫 무테 작업으로 선부분을 면으로 바꾸는 작업이</p><br>
+                                <p>어려워 마감처리가 깔끔하지 못함.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Character">
+                        <div class="img">
+                            <img src="../../images/20130106_ieelang.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Ps">Ps</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#Character</div>
+                            <div class="contents">
+                                <p>용도: 캐릭커쳐</p><br>
+                                <p>제작 동기: 지인 요청</p><br>
+                                <p>어려웠던 부분: 외각 처리는 깔끔하나 코처럼 면과 면이 명확히 구분되지 않는 부분 처리에 어려움.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Character">
+                        <div class="img">
+                            <img src="../../images/20160125_sea_group01.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Ps">Ps</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#Character</div>
+                            <div class="contents">
+                                <p>용도: 캐릭커쳐</p><br>
+                                <p>제작 동기: 졸업 선물용</p><br>
+                                <p>어려웠던 부분: 여러명의 학생과 선생님들을 한 캠퍼스 안에 동일한 그림체로 그리되 특징을 살려줘야함이 어려웠음.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Character">
+                        <div class="img">
+                            <img src="../../images/20161223_Teacher_Alex.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Ps">Ps</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#Character</div>
+                            <div class="contents">
+                                <p>용도: 캐릭커쳐</p><br>
+                                <p>제작 동기: 지인 요청</p><br>
+                                <p>어려웠던 부분: 지인의 선물용 그림으로 전혀 일면식 없는 사람을 얼굴 사진으로만 특징을 잡아내야 하는 점이 어려웠음.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Character">
+                        <div class="img">
+                            <img src="../../images/20141130_arnold.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Ps">Ps</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#Character</div>
+                            <div class="contents">
+                                <p>용도: 게임 캐릭터 디자인</p><br>
+                                <p>제작 동기: 포트폴리오 제작용</p><br>
+                                <p>컨셉: 넥슨-최강의 군단, 사냥나온 귀족</p><br>
+                                <p>어려웠던 부분: 첫 케임캐릭터 디자인 작업으로 캐릭터에 포인트를 주기 어려웠음.</p><br>
+                                <p>많은 피드백을 받아 무난한 디자인으로 완성함.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Character">
+                        <div class="img">
+                            <img src="../../images/20140827_daria.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Ps">Ps</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#Character</div>
+                            <div class="contents">
+                                <p>용도: 게임 캐릭터 디자인</p><br>
+                                <p>제작 동기: 포트폴리오 제작용</p><br>
+                                <p>컨셉: 넥슨-최강의 군단, 화려함을 좋아하는 귀부인</p><br>
+                                <p>어려웠던 부분: 착용한 액세서리에서 빛이 발광해 명암을 주는데 혼란스러웠음.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Character">
+                        <div class="img">
+                            <img src="../../images/20141226_gunner01.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Ps">Ps</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#Character</div>
+                            <div class="contents">
+                                <p>용도: 게임 캐릭터 디자인</p><br>
+                                <p>제작 동기: 포트폴리오 제작용</p><br>
+                                <p>컨셉: 동양풍 거너.</p><br>
+                                <p>어려웠던 부분: 역광을 처음 시도하여 명암을 주는데 혼란스러웠음. 총이 복잡하여 그리는데 오래 걸림.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Character">
+                        <div class="img">
+                            <img src="../../images/20150103_gunner02.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Ps">Ps</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#Character</div>
+                            <div class="contents">
+                                <p>용도: 게임 캐릭터 디자인</p><br>
+                                <p>제작 동기: 포트폴리오 제작용</p><br>
+                                <p>컨셉: 동양풍 거너.</p><br>
+                                <p>어려웠던 부분: 바람이 부는 방향에 따른 주름묘사가 어려웠음. 총이 복잡하여 그리는데 오래 걸림.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Character">
+                        <div class="img">
+                            <img src="../../images/20141210_alab.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Ps">Ps</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#Character</div>
+                            <div class="contents">
+                                <p>용도: 게임 캐릭터 디자인</p><br>
+                                <p>제작 동기: 포트폴리오 제작용</p><br>
+                                <p>컨셉: 모바일 게임. 중동풍 마법사.</p><br>
+                                <p>어려웠던 부분: 모바일 게임 캐릭터가 화면에 나올 때 상당히 작은 크기기 때문에 포인트가 되는 부분을 크게 나타내줘야 함.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Character">
+                        <div class="img">
+                            <img src="../../images/20141204_halangSD.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Ps">Ps</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#Character</div>
+                            <div class="contents">
+                                <p>용도: 게임 캐릭터 디자인</p><br>
+                                <p>제작 동기: 포트폴리오 제작용</p><br>
+                                <p>컨셉: 모바일 게임. 동양풍 검사.</p><br>
+                                <p>어려웠던 부분: 금속 소재의 질감 표현</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Character">
+                        <div class="img">
+                            <img src="../../images/20170731_summermail.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Ps">Ps</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#Character</div>
+                            <div class="contents">
+                                <p>용도: 엽서</p><br>
+                                <p>제작 동기: 선물용</p><br>
+                                <p>컨셉: 여름. 장마.</p><br>
+                                <p>어려웠던 부분: 밝은 느낌의 엽서를 만들고 싶었는데 장마컨셉 때문에 색상이 우중충하게 나왔음. 화려한 느낌을 주기 위해 배경 패턴을 일러스트로 변경함.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Character">
+                        <div class="img">
+                            <img src="../../images/IMG_4miaao.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Ps">Ps</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#Character</div>
+                            <div class="contents">
+                                <p>용도: 캐릭터 투명 명함</p><br>
+                                <p>사용 프로그램: 포토샵</p><br>
+                                <p>제작 동기: 선물용</p><br>
+                                <p>어려웠던 부분: 투명한 부분과 그림 부분의 비율 조정.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li class="3DPrinting">
+                        <div class="img">
+                            <img src="../../images/20181106_degimon.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Paint"><img src="../../images/interest01.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="tag">#3DPrinting</div>
+                            <div class="contents">
+                                <p>용도: 장식품</p><br>
+                                <p>사용 재료: PLA, 아크릴</p><br>
+                                <p>제작 동기: 선물용</p><br>
+                                <p>어려웠던 부분: 안쪽으로 각진 부분의 결을 매끄럽게 만들기가 어려웠음. 밝은 색상을 깔끔하게 칠하기 어려웠음.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="3DPrinting">
+                        <div class="img">
+                            <img src="../../images/20181204_jamespotter.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="ZB">ZB</li>
+                                    <li class="Paint"><img src="../../images/interest01.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="tag">#3DPrinting</div>
+                            <div class="contents">
+                                <p>용도: 장식품</p><br>
+                                <p>사용 재료: PLA, 아크릴, 색연필</p><br>
+                                <p>제작 동기: 선물용</p><br>
+                                <p>어려웠던 부분: 맞닿아 있는 부분의 결을 매끄럽게 만들고 채색하는 부분이 어려웠음.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="Etc">
+                        <div class="img">
+                            <img src="../../images/20180902_hwangteam_01.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Paint"><img src="../../images/interest01.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="tag">#Etc</div>
+                            <div class="contents">
+                                <p>용도: 장식품</p><br>
+                                <p>사용 재료: 아트툰토이, 아크릴, 색연필</p><br>
+                                <p>제작 동기: 생일 선물용</p><br>
+                                <p>어려웠던 부분: 고무 소재의 인형이라 아크릴이 잘 발리지 않아 여러 번에 덧칠해 색을 입혀야 했음. 카메라 소품 만들기가 매우 어려웠음.</p><br>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="Etc">
+                        <div class="img">
+                            <img src="../../images/madoka.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="use_tool">
+                                <ul>
+                                    <li class="Ai">Ai</li>
+                                </ul>
+                            </div>
+                            <div class="tag">#Etc</div>
+                            <div class="contents">
+                                <p>용도: 캐릭터 컨셉 핸드폰 케이스</p><br>
+                                <p>사용 프로그램: 일러스트</p><br>
+                                <p>제작 동기: 생일 선물용</p><br>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="pop_wrap">
+                <div class="pop">
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="city"></div>
+        <div class="sns">
+            <a href="mailto:someone@example.com?Subject=Hello%20again"  class="actionBtn3">
+                <div class="MailB back"></div>
+                <div class="MailF front"></div>
+            </a>
+            <a class="actionBtn3" href="https://twitter.com/sktmfrl01">
+                <div class="TwitterB back"></div>
+                <div class="TwitterF front"></div>
+            </a>
+            <a class="actionBtn3" href="https://open.kakao.com/o/sSYd5V6">
+                <div class="KakaoB back"></div>
+                <div class="KakaoF front"></div>
+            </a>
+            <a class="actionBtn3" href="#">
+                <div class="FacebookB back"></div>
+                <div class="FacebookF front"></div>
+            </a>
+        </div>
+        <div class="copyrights">
+            <p>Copyright 2017. 나슬기 all rights reserved.</p>
+        </div>
+
+    </footer>
+</body>
+</html>

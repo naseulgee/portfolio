@@ -1,0 +1,303 @@
+.on{
+    display: block !important;
+}
+
+#workslist article{
+    width: 100%;
+    overflow: hidden;
+}
+#workslist article div.article div.category-nav ul{
+    overflow: hidden;
+}
+#workslist article div.article div.category-nav ul li{
+    display: block;
+    width: calc(20% - 1.6px);
+    min-width: 50px;
+    box-sizing:border-box;
+    margin-right: 2px;
+    padding: 10px;
+    border: 1px solid #f55e61;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    float: left;
+    font-family: 'BMYEONSUNG', 'Nanum Myeongjo', serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+#workslist article div.article div.category-nav ul li:hover{
+    color: #f55e61;
+}
+#workslist article div.article div.category-nav ul li.on{
+    background-color: #f55e61;
+    color: #000 !important;
+}
+#workslist article div.article div.category-nav ul li:last-child{
+    margin-right: 0;
+}
+#workslist article div.article div.P_list{
+    width: 100%;
+    min-height: 800px;
+    background-color: #f55e61;
+    box-sizing: border-box;
+    border-radius: 0 0 5px 5px;
+    padding: 20px;
+}
+#workslist article div.article div.P_list ul{
+    overflow: hidden;
+}
+#workslist article div.article div.P_list ul li{
+    float: left;
+    width: 163px;
+    height: 163px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 5px;
+}
+#workslist article div.article div.P_list ul li div.img{
+    overflow: hidden;
+    width: 163px;
+    height: 163px;
+    position: relative;
+}
+#workslist article div.article div.P_list ul li div.img video{
+    display: none;
+}
+#workslist article div.article div.P_list ul li div.img img{
+    width: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+#workslist article div.article div.P_list ul li div.img img:hover{
+    width: 150%;
+}
+#workslist article div.article div.P_list ul li div.contents .use_tool{
+    display: none;
+}
+
+#workslist article div.article div.P_list ul li.on{
+    /*position: absolute;
+    z-index: 999;*/
+}
+
+/*팝업*/
+#workslist article div.article div.pop_wrap{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap *{
+    box-sizing: border-box;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.btn img{
+    cursor: pointer;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap{
+    overflow: hidden;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#workslist article div.article div.pop_wrap div.monitorwrap>div{
+    border: 1px solid #999;
+    margin: 0 auto;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top{
+    display: block;
+    width: 80%;
+    height: calc(100% - 90px);
+    max-height: 700px;
+    border-radius: 30px;
+}
+
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap{
+    width: 100%;
+    height: calc(100% - 50px);
+    overflow: hidden;
+    border: 25px solid #000;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.btn{
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: right;
+    background-color: #d3d3d3;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.btn.close{
+    height: 65px;
+    border-bottom: 2px solid #999;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.btn.close .tab{
+    width: 20%;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+    padding: 2px 0 0 10px;
+    background-color: #fff;
+    position: absolute;
+    top: calc(55px - 50px);
+    left: 5px;
+    text-align: left;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.btn.close .tab::after{
+    content: "";
+    background-color: #000;
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    left: 100%;
+    margin-left: 15px;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.btn.close .tab::before{
+    content: "";
+    background-color: #000;
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    left: 100%;
+    margin-left: 15px;
+    transform: rotate(90deg);
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.btn.close .add{
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: calc(55px - 21px);
+    left: 0px;
+    padding: 5px;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.btn.close .add div{
+    width: 95%;
+    height: 20px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #e3e3e3;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.btn.close img{
+    width: 25px;
+    margin: 5px 15px;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.btn.next-prev{
+    position: absolute;
+    bottom: 5px;
+    right: 30px;
+    background-color: #fff;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.btn.next-prev img{
+    width: 35px;
+}
+
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.contents{
+    width: 100%;
+    height: calc(100% - 65px);
+    overflow-y: scroll;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.contents div{
+    float: left;
+    overflow: hidden;
+    padding: 10px;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.contents div.img{
+    width: calc(60% - 20px);
+    padding: 0;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.contents div img,video{
+    width: 100%;
+}
+
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.contents>div.text{
+    width: calc(40% - 40px);
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.contents>div.text>div.tag{
+    color: #f55e61;
+    width: 100%;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.contents>div.text>div.use_tool>ul>li{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-sizing: border-box;
+    line-height: 45px;
+    text-align: center;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.contents>div.text>div.use_tool>ul>li.Ps{
+    background-color: #001d26;
+    color: #0ec8ff;
+    border: 2px solid #0ec8ff;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.contents>div.text>div.use_tool>ul>li.Ai{
+    background-color: #261300;
+    color: #ff810a;
+    border: 2px solid #ff810a;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.contents>div.text>div.use_tool>ul>li.Dw{
+    background-color: #072600; 
+    color: #35fa00;
+    border: 2px solid #35fa00;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.contents>div.text>div.use_tool>ul>li.Ae{
+    background-color: #1f003f; 
+    color: #cc8fff;
+    border: 2px solid #cc8fff;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.contents>div.text>div.use_tool>ul>li.Pr{
+    background-color: #2a0033; 
+    color: #e77bff;
+    border: 2px solid #e77bff;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.contents>div.text>div.use_tool>ul>li.ZB{
+    background-color: #6f6f6f; 
+    color: #f1f1f1;
+    border: 2px solid #f1f1f1;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.contentswrap div.contents>div.text>div.use_tool>ul>li.Paint img{
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border: 2px solid #6f6f6f;
+}
+
+
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.bar01{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 0 0 30px 30px;
+    padding-top: 12.5px;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.top div.bar01 div.circle{
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+#workslist article div.article div.pop_wrap div.monitorwrap div.bar02{
+    display: block;
+    width: 20%;
+    height: 70px;
+    background-color: #999;
+}
+#workslist article div.article div.pop_wrap div.monitorwrap div.bottom{
+    display: block;
+    width: 50%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}

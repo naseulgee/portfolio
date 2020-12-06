@@ -1,0 +1,235 @@
+#list .calendar_wrap{
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin-bottom: 50px;
+}
+#list .calendar_wrap table{
+    width: 100%;
+    min-width: 1280px;
+}
+#list .calendar_wrap table tbody tr th, td{
+    border: 1px solid #000;
+}
+#list .calendar_wrap table tbody tr th{
+    min-width: 40px;
+}
+#list .calendar_wrap table tbody tr th.year{
+    min-width: 80px;
+    font-family: 'Arita-buri-SemiBold';
+    font-size: 20px;
+}
+#list .calendar_wrap table tbody tr td#event{
+            background-color: #f55e61;
+            cursor: pointer;
+}
+#list .calendar_wrap table tbody tr td.none{
+    background-color: #000
+}
+
+#list .list_wrap{
+    width: 100%;
+}
+
+.ani{
+    z-index: 1;
+    background-color: #fff;
+    animation-name: Rani;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate ;
+    animation-timing-function: ease-in-out;
+    
+    -moz-animation-name: Rani;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: alternate ;
+    -moz-animation-timing-function: ease-in-out;
+    
+    -webkit-animation-name: Rani;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: alternate ;
+    -webkit-animation-timing-function: ease-in-out;
+}
+@keyframes Rani{
+	10% {transform: rotate(30deg);}
+	20% {transform: rotate(-35deg);}
+	30% {transform: rotate(20deg);}
+	40% {transform: rotate(-20deg);}
+	50% {transform: rotate(10deg);}
+	60% {transform: rotate(-10deg);}
+	70% {transform: rotate(5deg);}
+	80% {transform: rotate(-5deg);}
+	90% {transform: rotate(2deg);}
+	100% {transform: rotate(0deg);}
+}
+@-webkit-keyframes Rani{
+	10% {transform: rotate(30deg);}
+	20% {transform: rotate(-35deg);}
+	30% {transform: rotate(20deg);}
+	40% {transform: rotate(-20deg);}
+	50% {transform: rotate(10deg);}
+	60% {transform: rotate(-10deg);}
+	70% {transform: rotate(5deg);}
+	80% {transform: rotate(-5deg);}
+	90% {transform: rotate(2deg);}
+	100% {transform: rotate(0deg);}
+}
+@-moz-keyframes Rani{
+	10% {transform: rotate(30deg);}
+	20% {transform: rotate(-35deg);}
+	30% {transform: rotate(20deg);}
+	40% {transform: rotate(-20deg);}
+	50% {transform: rotate(10deg);}
+	60% {transform: rotate(-10deg);}
+	70% {transform: rotate(5deg);}
+	80% {transform: rotate(-5deg);}
+	90% {transform: rotate(2deg);}
+	100% {transform: rotate(0deg);}
+}
+
+
+#list .list_wrap>ul>li{
+    float: left;
+    display: block;
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    z-index: -1;
+}
+#list .list_wrap>ul>li:last-child{
+    margin-right: 0;
+}
+#list .list_wrap>ul>li>a{
+    overflow: hidden;
+}
+#list .list_wrap>ul>li>a>ul>li:first-child{
+    width: 100%;
+    height:  160px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    position: relative;
+}
+#list .list_wrap>ul>li>a>ul>li:first-child img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+}
+#list .list_wrap>ul>li:hover>a>ul>li:first-child img{
+    width: 120%;
+}
+#list .list_wrap>ul>li>a>ul>li:nth-child(2){
+    font-family: 'BMYEONSUNG', 'Nanum Myeongjo', serif;
+    font-size: 20px;
+}
+#list .list_wrap>ul>li>a>ul>li:last-child{
+    font-size: 12px;
+}
+
+/*event detail page*/
+#detail div.goback{
+    width: 61px;
+    height: 56px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#detail div.goback a img{
+    width: 35px;
+}
+#detail div.goback a p{
+    display: block;
+    font-size: 12px;
+    line-height: 1;
+}
+#detail ul.info01 li{
+    width: 100%;
+}
+#detail>ul.info01{
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+#detail>ul.info01{
+    max-width: 700px;
+    margin: 0 auto;
+}
+#detail>ul.info01>li{
+    float: left;
+}
+#detail>ul.info01>li.img{
+    width: 300px;
+    height: 250px;
+    margin-right: 40px;
+}
+#detail>ul.info01>li.img img{
+    width: 100%;
+}
+#detail>ul.info01>li.text{
+    width: 300px;
+}
+#detail>ul.info01>li.text ul li:first-child{
+    font-family: 'BMYEONSUNG', 'Nanum Myeongjo', serif;
+    font-size: 25px;
+}
+#detail>ul.info01>li.text ul li:last-child a{
+    display: block;
+    width: 130px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 13px;
+    border: 2px solid #f55e61;
+    border-radius: 5px;
+    text-align: center;
+}
+#detail>hr{
+    width: 100%;
+    border-bottom-width: 0;
+    border-top: 5px dotted #666;
+    margin: 50px auto;
+}
+#detail>ul.info02{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#detail>ul.info02>li{
+    border-bottom: 2px dotted #f0f0f0;
+    padding: 20px 0;
+}
+#detail>ul.info02>li:last-child{
+    border: 0;
+}
+#detail>ul.info02>li>ul{
+    width: 100%;
+    overflow: hidden;
+}
+#detail>ul.info02>li>ul>li{
+    min-width: 300px;
+    margin-right: 10px;
+}
+#detail>ul.info02>li>ul>li.text>ul>li:first-child{
+    font-family: 'BMYEONSUNG', 'Nanum Myeongjo', serif;
+    font-size: 20px;
+}
+#detail>ul.info02>li.left>ul>li{
+    float: left;
+}
+#detail>ul.info02>li.right>ul>li{
+    float: right;
+    text-align: right;
+}
+#detail>ul.info02>li>ul>li.img>img{
+    max-width: 300px;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+#detail>ul.info02>li>ul>li.img>img:last-child{
+    margin-right: 0;
+}

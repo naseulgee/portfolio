@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Dream Whale</title>
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <link rel="stylesheet" type="text/css" href="css/Action.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+
+        $(function(){
+            
+            function linear() {
+                $('.main_move_cloud01').animate({left:"-2580px"},20000,linear).animate({left:"-800px"},20000,linear);
+                $('.main_move_cloud02').animate({left:"-2580px"},25000,linear).animate({left:"-800px"},25000,linear);
+                $('.main_move_cloud03').animate({left:"-2580px"},30000,linear).animate({left:"-800px"},30000,linear);
+            }linear();
+            
+            $('.top').click(function(){
+                $('html,body').animate({
+                    scrollTop:0
+                },800,'swing')
+            })
+            
+            $('.contact').click(function(){
+                $('html,body').animate({
+                    scrollTop:5000
+                },800,'swing')
+            })
+            $('.nav_slide').click(function(){
+                $('.nav').toggleClass('on');
+            })
+          })
+    </script>
+    
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="Logo"><a href="http://dreamwhale.dothome.co.kr/00_My_Home/"></a></div>
+            <div class="Menu_wrap">
+                <a href="http://dreamwhale.dothome.co.kr/00_My_Home/sub/aboutMe/" class="aboutMe actionBtn9">
+                    <span class="txt">about Me</span>
+                        <span class="bubble_inner">
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                    </span>
+                </a>
+                <a href="http://dreamwhale.dothome.co.kr/00_My_Home/sub/portfolio/" class="portfolio actionBtn9">
+                    <span class="txt">Portfolio</span>
+                        <span class="bubble_inner">
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                    </span>
+                </a>
+                <a href="#none" class="contact actionBtn9">
+                    <span class="txt">Contact</span>
+                        <span class="bubble_inner">
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                        <span class="bubble"></span>
+                    </span>
+                </a>
+            </div>
+            <div class="nav_slide"></div>
+            <div class="top"></div>
+        </div>
+    </header>
+    
+    <section>
+		<div class="">
+<ul>
+<li></li>
+			</ul>
+		</div>
+        <div class="background">
+            <p>Dream Whale</p>
+            <img src="images/cloud01.png" alt="구름01" class="main_move_cloud01">
+            <img src="images/cloud02.png" alt="구름02" class="main_move_cloud02">
+            <img src="images/cloud03.png" alt="구름03" class="main_move_cloud03">
+        </div>
+    </section>
+    
+    <footer>
+        <div class="city"></div>
+        <div class="sns">
+            <a href="mailto:someone@example.com?Subject=Hello%20again"  class="actionBtn3">
+                <div class="MailB back"></div>
+                <div class="MailF front"></div>
+            </a>
+            <a class="actionBtn3" href="https://twitter.com/sktmfrl01">
+                <div class="TwitterB back"></div>
+                <div class="TwitterF front"></div>
+            </a>
+            <a class="actionBtn3" href="https://open.kakao.com/o/sSYd5V6">
+                <div class="KakaoB back"></div>
+                <div class="KakaoF front"></div>
+            </a>
+            <a class="actionBtn3" href="#">
+                <div class="FacebookB back"></div>
+                <div class="FacebookF front"></div>
+            </a>
+        </div>
+        <div class="copyrights">
+            <p>Copyright 2017. 나슬기 all rights reserved.</p>
+        </div>
+
+    </footer>
+</body>
+</html>
